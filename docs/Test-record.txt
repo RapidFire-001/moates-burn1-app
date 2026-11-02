@@ -1,0 +1,57 @@
+BURN / DEVICE STUDIO - RECORDED CHECKS
+21 October 2026
+
+LIVE BENCH: user's 512 KB test chip, SST39SF040 profile
+BURN1 identity 05 0E 46 (5.14.F), 921600 baud.
+Exact chip manufacturer/model remains unconfirmed.
+
+Observed in this final-check session:
+- Initial two full reads matched; backup saved (all FF).
+- First program attempt rejected at address zero (reply 3F).
+- After reseat and USB power cycle: full 512 KB diagnostic
+  program passed with two matching checked readbacks.
+- Separate Verify vs BIN matched the entire diagnostic.
+- Controlled repeat, no unplug/reseat: erase, blank check,
+  diagnostic program and two full checked readbacks PASSED.
+- v18 ROM stacker: added two sample BINs, reordered and
+  repeated entries, created four 128 KB banks. UI-saved output
+  independently checked byte by byte, including all FF padding.
+- Stacked BIN: erase, blank check, full 512 KB program and
+  two full matching checked readbacks PASSED on this chip.
+- Stacker correctly blocked opening during chip operation.
+
+Total observed successful programming cycles this session:
+2 diagnostic + 1 stacked-file = 3. Earlier failure retained.
+No erase-to-program lockout reproduced by controlled repeat.
+Cause of initial rejection remains unresolved; socket failure
+has not been established. These results apply to this chip.
+
+SOFTWARE CHECKS
+Profile permissions; remembered selection; disconnected/busy
+controls; placement; AT29 page alignment/preservation; first
+and last addresses; file comparison mismatches and bounds;
+all 2048 diagnostic write-packet addresses/payloads/checksums;
+stack ordering, repeats, bank padding and invalid-size rejection.
+These checks do not validate other physical chips.
+
+OTHER PROFILE EVIDENCE (corrected by user 21 October 2026)
+27C128 / 27C256 / 27C512: matching reads from OneROM emulation;
+physical EPROMs untested. Read-only profiles.
+AT29C256: matching reads from OneROM emulation; physical-chip
+read/program support remains untested.
+W27C512: no OneROM test reported. Historical matching reads and
+failed experimental erase retained as separate earlier evidence.
+SST27SF512 / AM29F040: physical-chip testing pending.
+
+LIMITS
+No chip-ID detection, firmware changes, or verified socket-power
+switching. Disconnect releases the app session, not USB power.
+Stacking creates a BIN; it does not add chip write compatibility.
+
+v20 READ-ONLY BLANK TEST
+Dedicated Blank test button added for all profiles. Two complete
+checksum-checked reads, full-capacity FF scan, first non-FF
+address/value and count. No BIN required; no erase/write command.
+Software checks passed at 16/32/64/512 KB, including last-byte
+failures and busy/offline controls. Minimum-size layout reviewed.
+Dedicated button has not yet been exercised on a physical chip.
