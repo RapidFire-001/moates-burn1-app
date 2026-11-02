@@ -1,0 +1,4 @@
+# Preserve reviewed bytes across checkouts; checksums cover the raw files.
+* -text
+*.ico binary
+*.png binary

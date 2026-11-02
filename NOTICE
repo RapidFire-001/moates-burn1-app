@@ -1,0 +1,21 @@
+BurnModern / BURN Device Studio
+Creator credit for this project's contributions: Rapidfire
+Copyright (c) 2026 Rapidfire
+
+Rapidfire licenses only the code, documentation, tests, build scripts and
+original geometric icon assets for which Rapidfire has rights under MIT
+(see LICENSE). This notice does not grant rights in third-party material,
+assert ownership of protocol documentation, or cure missing permission for
+any third-party code. Unresolved provenance limits are in docs/PROVENANCE.md.
+
+Rapidfire-001 is the intended GitHub account/repository owner only; it is not
+the copyright-holder or creator-credit name.
+
+Protocol/reference acknowledgments:
+- Moates: BURN hardware and protocol documentation.
+- Chris Handwerker (2013), homebrewtechnology.org: Moates BURN Driver / Utility
+  source consulted during development. No reference C source is bundled.
+- OneROM: inspiration for the charcoal/lime visual theme; no OneROM source,
+  firmware or assets are included.
+
+These acknowledgments do not imply endorsement or transfer third-party rights.
