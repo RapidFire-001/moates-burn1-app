@@ -4,6 +4,8 @@ A Windows desktop interface for the Moates BURN1 chip programmer. Version 21 by 
 
 **License:** MIT for contributions Rapidfire has rights to license; see [LICENSE](LICENSE) and [NOTICE](NOTICE). The grant does not cover third-party rights. The source-comparison and development-history review found no identified copied implementation passage, but cannot certify absence of adaptation; see [provenance](docs/PROVENANCE.md). No concrete copied-expression rights blocker was identified by the review. The implementation and historical hardware-test limits are documented below.
 
+> **Microsoft Edge download notice:** Edge may show a warning or block a download from this repository. If the page or download is unavailable in Edge, you can also open the official GitHub page in Firefox or Chrome. If your browser or antivirus flags a file as malware, please report the exact warning and the file name or release version so I can investigate.
+
 ## Features
 
 - Connect/disconnect a BURN programmer through its serial port and remember a manually selected profile.
