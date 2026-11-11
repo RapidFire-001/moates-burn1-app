@@ -1,5 +1,7 @@
 # BurnModern / BURN Device Studio
 
+BurnModern by Rapid Fire is a Windows desktop app for the Moates BURN1 EPROM chip programmer.
+
 A Windows desktop interface for the Moates BURN1 chip programmer. Version 21 by Rapidfire, prepared for the proposed `Rapidfire-001/moates-burn1-app` GitHub repository. This project is independent of Moates; it is not the vendor Flash & Burn software or device firmware.
 
 **License:** MIT for contributions Rapidfire has rights to license; see [LICENSE](LICENSE) and [NOTICE](NOTICE). The grant does not cover third-party rights. The source-comparison and development-history review found no identified copied implementation passage, but cannot certify absence of adaptation; see [provenance](docs/PROVENANCE.md). No concrete copied-expression rights blocker was identified by the review. The implementation and historical hardware-test limits are documented below.
